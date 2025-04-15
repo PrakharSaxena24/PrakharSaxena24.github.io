@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prakhar Saxena - Personal Website</title>
@@ -26,7 +27,7 @@
       --tag-color: #3498db;
       --pub-border: #eee;
     }
-    
+
     [data-theme="dark"] {
       --primary-color: #3498db;
       --secondary-color: #2ecc71;
@@ -47,7 +48,7 @@
       --tag-color: #2ecc71;
       --pub-border: #2c3e50;
     }
-    
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -57,13 +58,13 @@
       background-color: var(--body-bg);
       transition: background-color 0.3s, color 0.3s;
     }
-    
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 20px;
     }
-    
+
     /* Theme toggle */
     .theme-toggle {
       position: fixed;
@@ -74,20 +75,20 @@
       align-items: center;
       cursor: pointer;
     }
-    
+
     .toggle-switch {
       position: relative;
       display: inline-block;
       width: 60px;
       height: 30px;
     }
-    
+
     .toggle-switch input {
       opacity: 0;
       width: 0;
       height: 0;
     }
-    
+
     .toggle-slider {
       position: absolute;
       cursor: pointer;
@@ -99,7 +100,7 @@
       transition: .4s;
       border-radius: 30px;
     }
-    
+
     .toggle-slider:before {
       position: absolute;
       content: "";
@@ -111,24 +112,24 @@
       transition: .4s;
       border-radius: 50%;
     }
-    
+
     input:checked + .toggle-slider {
       background-color: var(--secondary-color);
     }
-    
+
     input:focus + .toggle-slider {
       box-shadow: 0 0 1px var(--secondary-color);
     }
-    
+
     input:checked + .toggle-slider:before {
       transform: translateX(30px);
     }
-    
+
     .toggle-icon {
       margin: 0 8px;
       font-size: 20px;
     }
-    
+
     /* Language toggle styles */
     .language-toggle {
       position: fixed;
@@ -136,7 +137,7 @@
       right: 20px;
       z-index: 1000;
     }
-    
+
     .language-toggle button {
       margin: 0 5px;
       padding: 5px 10px;
@@ -147,11 +148,11 @@
       border-radius: 3px;
       transition: background-color 0.3s;
     }
-    
+
     .language-toggle button:hover {
       background-color: var(--link-hover);
     }
-    
+
     /* Header styles */
     header {
       background-color: var(--header-bg);
@@ -160,7 +161,7 @@
       border-bottom: 1px solid var(--pub-border);
       transition: background-color 0.3s;
     }
-    
+
     .profile-pic {
       width: 150px;
       height: 150px;
@@ -168,20 +169,20 @@
       object-fit: cover;
       margin-bottom: 20px;
     }
-    
+
     h1 {
       margin: 0;
       font-size: 2.5rem;
       color: var(--primary-color);
     }
-    
+
     .subtitle {
       font-size: 1.2rem;
       color: var(--text-color);
       opacity: 0.8;
       margin: 10px 0;
     }
-    
+
     /* Navigation */
     nav {
       background-color: var(--nav-bg);
@@ -192,7 +193,7 @@
       z-index: 100;
       transition: background-color 0.3s, box-shadow 0.3s;
     }
-    
+
     nav ul {
       list-style: none;
       padding: 0;
@@ -201,32 +202,32 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-    
+
     nav li {
       margin: 0 15px;
     }
-    
+
     nav a {
       text-decoration: none;
       color: var(--primary-color);
       font-weight: 500;
       transition: color 0.3s;
     }
-    
+
     nav a:hover {
       color: var(--link-hover);
     }
-    
+
     /* Section styles */
     section {
       padding: 50px 0;
       transition: background-color 0.3s;
     }
-    
+
     section:nth-child(even) {
       background-color: var(--light-bg);
     }
-    
+
     h2 {
       color: var(--primary-color);
       margin-top: 0;
@@ -234,7 +235,7 @@
       position: relative;
       display: inline-block;
     }
-    
+
     h2:after {
       content: '';
       position: absolute;
@@ -244,7 +245,7 @@
       height: 3px;
       background-color: var(--secondary-color);
     }
-    
+
     /* About section */
     .about-content {
       display: flex;
@@ -252,42 +253,59 @@
       align-items: flex-start;
       gap: 30px;
     }
-    
+
     .about-text {
       flex: 1;
       min-width: 300px;
     }
-    
+
     /* Experience and Projects */
     .timeline {
       margin-top: 30px;
     }
-    
+
     .timeline-item {
       margin-bottom: 30px;
       position: relative;
       padding-left: 30px;
       border-left: 2px solid var(--timeline-border);
     }
-    
+
     .timeline-date {
       font-weight: bold;
       color: var(--secondary-color);
       margin-bottom: 5px;
     }
-    
+
     .timeline-title {
       font-weight: bold;
       margin-bottom: 5px;
     }
-    
+
     .timeline-subtitle {
       color: var(--text-color);
       opacity: 0.7;
       font-style: italic;
       margin-bottom: 10px;
     }
-    
+
+    /* Academic Roles section (NEW) */
+    #academic-roles ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 30px;
+    }
+
+    #academic-roles li {
+      margin-bottom: 15px;
+    }
+
+    #academic-roles li p {
+       margin-top: 5px;
+       opacity: 0.8; /* Make descriptions slightly less prominent */
+       font-size: 0.9rem;
+    }
+
     /* Projects */
     .projects-grid {
       display: grid;
@@ -295,7 +313,7 @@
       gap: 30px;
       margin-top: 30px;
     }
-    
+
     .project-card {
       background-color: var(--card-bg);
       border-radius: 5px;
@@ -303,35 +321,35 @@
       box-shadow: var(--project-shadow);
       transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     }
-    
+
     .project-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--project-hover-shadow);
     }
-    
+
     .project-img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-    
+
     .project-content {
       padding: 20px;
     }
-    
+
     .project-title {
       margin-top: 0;
       margin-bottom: 10px;
       color: var(--primary-color);
     }
-    
+
     .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
       margin-top: 10px;
     }
-    
+
     .tag {
       background-color: var(--tag-bg);
       color: var(--tag-color);
@@ -339,60 +357,60 @@
       border-radius: 3px;
       font-size: 0.8rem;
     }
-    
+
     /* Publications */
     .publication {
       margin-bottom: 25px;
       padding-bottom: 25px;
       border-bottom: 1px solid var(--pub-border);
     }
-    
+
     .publication:last-child {
       border-bottom: none;
     }
-    
+
     .publication-title {
       font-weight: bold;
       margin-bottom: 5px;
     }
-    
+
     .publication-authors {
       font-style: italic;
       margin-bottom: 5px;
     }
-    
+
     .publication-venue {
       color: var(--text-color);
       opacity: 0.7;
     }
-    
+
     /* Blog posts */
     .blog-post {
       margin-bottom: 30px;
     }
-    
+
     .blog-title {
       color: var(--primary-color);
       margin-bottom: 10px;
     }
-    
+
     .blog-title a {
       color: var(--primary-color);
       text-decoration: none;
       transition: color 0.3s;
     }
-    
+
     .blog-title a:hover {
       color: var(--link-hover);
     }
-    
+
     .blog-date {
       color: var(--text-color);
       opacity: 0.7;
       font-size: 0.9rem;
       margin-bottom: 10px;
     }
-    
+
     /* Contact section */
     .contact-info {
       display: flex;
@@ -400,19 +418,19 @@
       gap: 20px;
       margin-top: 20px;
     }
-    
+
     .contact-item {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    
+
     .contact-icon {
       width: 20px;
       height: 20px;
       fill: var(--secondary-color);
     }
-    
+
     /* Footer */
     footer {
       background-color: var(--dark-bg);
@@ -421,11 +439,11 @@
       text-align: center;
       transition: background-color 0.3s;
     }
-    
+
     .social-links {
       margin-bottom: 20px;
     }
-    
+
     .social-link {
       display: inline-block;
       margin: 0 10px;
@@ -434,41 +452,46 @@
       transition: color 0.3s;
       text-decoration: none;
     }
-    
+
     .social-link:hover {
       color: var(--secondary-color);
     }
-    
+
     .copyright {
       font-size: 0.9rem;
       opacity: 0.8;
     }
-    
+
     /* Responsive styles */
     @media (max-width: 768px) {
       h1 {
         font-size: 2rem;
       }
-      
+
       .subtitle {
         font-size: 1rem;
       }
-      
+
       section {
         padding: 30px 0;
       }
-      
+
       .about-content {
         flex-direction: column;
       }
-      
+
       .projects-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .theme-toggle {
         top: 10px;
         right: 10px;
+      }
+
+      /* Adjust padding for smaller screens if needed */
+      #academic-roles ul {
+        padding-left: 25px; /* Ensure bullets are visible */
       }
     }
   </style>
@@ -506,11 +529,13 @@
       <ul>
         <li><a href="#about" data-translate="navAbout">About</a></li>
         <li><a href="#experience" data-translate="navExperience">Experience</a></li>
+        <!-- NEW Navigation Link -->
+        <li><a href="#academic-roles" data-translate="navAcademicRoles">Academic Roles</a></li>
         <li><a href="#projects" data-translate="navProjects">Projects</a></li>
         <li><a href="#publications" data-translate="navPublications">Publications</a></li>
         <!-- <li><a href="#blog">Blog</a></li> -->
         <li><a href="#contact" data-translate="navContact">Contact</a></li>
-        <li><a href="assets/prakhar-cv.pdf" target="_blank" data-translate="navCV">CV</a></li>
+        <li><a href="assets/prakhar-cv-en.pdf" target="_blank" data-translate="navCV">CV</a></li>
       </ul>
     </div>
   </nav>
@@ -542,18 +567,52 @@
           <p>Developing and deploying machine learning models at scale. Leading a team of engineers to build a robust ML platform. Working on optimization techniques for large-scale data processing.</p>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">2020 - 2023</div>
-          <div class="timeline-title">Machine Learning Engineer</div>
-          <div class="timeline-subtitle">AI Startup, Tokyo</div>
-          <p>Designed and implemented deep learning algorithms for computer vision tasks. Improved model accuracy by 25% while reducing inference time by 40%. Collaborated with product teams to integrate ML capabilities.</p>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-title">Machine Learning Researcher [Internship]</div>
+          <div class="timeline-subtitle">LegalForce, Tokyo</div>
+          <p>Reseach on data deduplication for LLM training at LegalForce, comparing NCD and Edit Similarity on Wiki40B. Training GPT-2 on cleaned data led to improved perplexity over baseline.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2021-2022</div>
           <div class="timeline-title">Machine Learning Engineer [Internship]</div>
           <div class="timeline-subtitle">Insight Tech, Tokyo [Remote]</div>
-          <p>Developed a Bert based model for sentiment analysis</p>
+          <p>Built a BERT-based sentiment analysis model using PyTorch and Hugging Face for Insight Tech, a Tokyo-based company that analyzes online reviews. Improved overall F1 score by up to 20% across sentiment classes.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Academic Roles Section (NEW) -->
+  <section id="academic-roles">
+    <div class="container">
+      <h2 data-translate="academicRolesTitle">Academic Roles</h2>
+      <ul>
+        <!-- Replace placeholders with your actual details -->
+        <li>
+          <strong>Research Assistant</strong> - Prof. Rafik Hadfi, Kyoto University (01/2022-04/2022)
+          <p data-translate="raDesc1"></p>
+        </li>
+        <li>
+          <strong>Research Assistant</strong> - Prof. Chenhui Chu, Kyoto University (11/2022-03/2023)
+          <p data-translate="raDesc2"></p>
+        </li>
+        <li>
+          <strong>Technical Assistant</strong> - Prof. Rafik Hadfi, Kyoto University (04/2024-08/2024)
+          <p data-translate="raDesc3">.</p>
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> - Practice of Basic Informatics-E2, Kyoto University (04/2022-07/2022)
+          <p data-translate="taDesc1"></p>
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> - Practice of Basic Informatics-E2, Kyoto University (04/2023-07/2023)
+          <p data-translate="taDesc2"></p>
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> - 情報分析・管理演習 [Information Analysis and Management], Kyoto University (04/2024-07/2024)
+          <p data-translate="taDesc3"></p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -607,20 +666,26 @@
     <div class="container">
       <h2 data-translate="publicationsTitle">Publications</h2>
       <div class="publication">
-        <div class="publication-title">"Efficient Deployment of Large Language Models on Edge Devices"</div>
-        <div class="publication-authors">Prakhar Saxena, Co-author 1, Co-author 2</div>
-        <div class="publication-venue">International Conference on Machine Learning (ICML), 2024</div>
+        <div class="publication-title">"Static and dynamic speaker modeling based on graph neural network for emotion recognition in conversation"</div>
+        <!-- <div class="publication-authors">Prakhar Saxena, Co-author 1, Co-author 2</div> -->
+        <div class="publication-venue">Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL), 2022</div>
       </div>
       <div class="publication">
-        <div class="publication-title">"A Novel Approach to Transfer Learning in Computer Vision Applications"</div>
-        <div class="publication-authors">Prakhar Saxena, Co-author 3</div>
-        <div class="publication-venue">Conference on Computer Vision and Pattern Recognition (CVPR), 2023</div>
+        <div class="publication-title">"Shaping Personality of Large Language Models: An Approach Based on Representation Engineering"</div>
+        <!-- <div class="publication-authors">Prakhar Saxena, Co-author 3</div> -->
+        <div class="publication-venue">Association for Natural Language Processing (言語処理学会)、2025</div>
       </div>
+
       <div class="publication">
-        <div class="publication-title">"Scalable Machine Learning Pipelines for Production Environments"</div>
-        <div class="publication-authors">Prakhar Saxena, Co-author 4, Co-author 5</div>
-        <div class="publication-venue">Journal of Machine Learning Research, 2022</div>
+        <div class="publication-title">
+          <!-- <a href="https://www.amazon.co.jp/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2%E3%81%AE%E4%B8%96%E8%AB%96%E3%81%A8%E7%A4%BE%E4%BC%9A-%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%BB%E3%83%92%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%81%A7%E7%B4%90%E8%A7%A3%E3%81%8F%E5%85%AC%E9%96%8B%E9%9B%86%E4%BC%9A%E3%81%AE%E6%AD%B4%E5%8F%B2-%E8%97%A4%E5%B7%9D%E9%9A%86%E7%94%B7/dp/4887084897" target="_blank"> -->
+            「オーストラリアの世論と社会: デジタル・ヒストリーで紐解く公開集会の歴史」
+          </a>
+        </div>
+        <div class="publication-authors">Contribution: Data processing, NLP analysis, and visualization – Prakhar Saxena</div>
+        <div class="publication-venue">Book publication by Professor Takao Fujikawa, BookLive / Amazon Japan, 2024</div>
       </div>
+      
     </div>
   </section>
 
@@ -629,8 +694,8 @@
     <div class="container">
       <h2 data-translate="blogTitle">Blog</h2>
       <div class="blog-post">
-        <h3 class="blog-title"><a href="#" data-translate="blogPost1Title">Building Efficient ML Systems: Lessons Learned</a></h3>
-        <div class="blog-date">March 10, 2025</div>
+        <h3 class="blog-title"><a href="#" data-translate="blogPost1Title">Fine Tuning Mistral (or ANY LLM) using LoRA</a></h3>
+        <div class="blog-date">Jan 14, 2024</div>
         <p data-translate="blogPost1Desc">In this post, I share my experiences and insights from building and deploying machine learning systems at scale, focusing on performance optimization and resource efficiency.</p>
       </div>
       <div class="blog-post">
@@ -672,85 +737,25 @@
   <footer>
     <div class="container">
       <div class="social-links">
-        <a href="https://github.com/PrakharSaxena24" class="social-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/prakhar-saxena-47434a196/" class="social-link">LinkedIn</a>
-        <!-- <a href="#" class="social-link">Twitter</a> -->
-        <a href="https://medium.com/@prakharsaxena11111" class="social-link">Medium</a>
-      </div>
-      <div class="copyright">© Designed with Claude and o3</div>
+        <a href="https://github.com/PrakharSaxena24" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/prakhar-saxena-47434a196/" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://medium.com/@prakharsaxena11111" class="social-link" aria-label="Medium">
+            <i class="fab fa-medium"></i>
+        </a>
+        <a href="https://scholar.google.co.jp/citations?user=xm3FMg8AAAAJ&hl=en" class="social-link" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+    </div>
+      <div class="copyright">© Designed with Claude and Gemini</div>
     </div>
   </footer>
 
   <!-- JavaScript for Theme and Language Toggle -->
   <script>
-    // // Translation dictionary
-    // const translations = {
-    //   en: {
-    //     headerTitle: "Prakhar Saxena",
-    //     subtitle: "Model Training | Machine Learning | Writing",
-    //     navAbout: "About",
-    //     navExperience: "Experience",
-    //     navProjects: "Projects",
-    //     navPublications: "Publications",
-    //     navContact: "Contact",
-    //     aboutTitle: "About Me",
-    //     navCV: "CV", 
-    //     aboutText1: "Hi there! I'm a passionate Machine Learning researcher and engineer with roots in Electrical and Electronics Engineering. I help individuals and businesses with generative AI.",
-    //     aboutText2: "My research interest revolves around Machine Learning and AI, seeking innovative solutions at the intersection of technology and creativity.",
-    //     aboutText3: "When I'm not immersed in coding, you can find me hiking, exploring niche topics like Buddhist philosophy and Jhanas, or keeping up with the evolving world of tech.",
-    //     experienceTitle: "Experience",
-    //     projectsTitle: "Projects",
-    //     project1Title: "ML Model Deployment Platform",
-    //     project1Desc: "An end-to-end platform for deploying and monitoring machine learning models in production.",
-    //     project2Title: "Natural Language Query System",
-    //     project2Desc: "A system that translates natural language questions into database queries for non-technical users.",
-    //     project3Title: "Computer Vision Framework",
-    //     project3Desc: "A lightweight framework for rapid prototyping of computer vision applications.",
-    //     publicationsTitle: "Publications",
-    //     blogTitle: "Blog",
-    //     blogPost1Title: "Building Efficient ML Systems: Lessons Learned",
-    //     blogPost1Desc: "In this post, I share my experiences and insights from building and deploying machine learning systems at scale, focusing on performance optimization and resource efficiency.",
-    //     blogPost2Title: "The Future of Natural Language Processing",
-    //     blogPost2Desc: "An exploration of emerging trends in NLP, from large language models to multimodal systems, with predictions about where the field is heading in the coming years.",
-    //     blogPost3Title: "A Practical Guide to Transfer Learning",
-    //     blogPost3Desc: "This comprehensive guide walks through various transfer learning techniques for deep learning models, with practical examples and code snippets.",
-    //     contactTitle: "Contact",
-    //     contactText: "Feel free to reach out."
-    //   },
-    //   ja: {
-    //     headerTitle: "プラカル・サクセナ",
-    //     subtitle: "モデル訓練 | 機械学習 | 執筆",
-    //     navAbout: "私について",
-    //     navExperience: "経験",
-    //     navProjects: "プロジェクト",
-    //     navPublications: "出版物",
-    //     navContact: "連絡先",
-    //     aboutTitle: "私について",
-    //     navCV: "履歴書",
-    //     aboutText1: "こんにちは！私は電気・電子工学にルーツを持つ情熱的な機械学習研究者であり、エンジニアです。ジェネレーティブAIを通じて個人や企業を支援しています。",
-    //     aboutText2: "私の研究は、技術と創造性の交差点における革新的な解決策を追求する機械学習とAIに焦点を当てています。",
-    //     aboutText3: "コーディングに没頭していない時は、ハイキングをしたり、仏教哲学やジャーナのようなニッチなトピックを探求したり、進化し続けるテックの世界を追いかけたりしています。",
-    //     experienceTitle: "経験",
-    //     projectsTitle: "プロジェクト",
-    //     project1Title: "MLモデル展開プラットフォーム",
-    //     project1Desc: "プロダクション環境での機械学習モデルの展開と監視のためのエンドツーエンドのプラットフォーム。",
-    //     project2Title: "自然言語クエリシステム",
-    //     project2Desc: "非技術ユーザー向けに自然言語の質問をデータベースクエリに変換するシステム。",
-    //     project3Title: "コンピュータビジョンフレームワーク",
-    //     project3Desc: "コンピュータビジョンアプリケーションの迅速なプロトタイピングのための軽量フレームワーク。",
-    //     publicationsTitle: "出版物",
-    //     blogTitle: "ブログ",
-    //     blogPost1Title: "効率的なMLシステムの構築：得た教訓",
-    //     blogPost1Desc: "この投稿では、大規模な機械学習システムの構築と展開から得た経験と洞察を、パフォーマンス最適化とリソース効率に焦点を当てて共有します。",
-    //     blogPost2Title: "自然言語処理の未来",
-    //     blogPost2Desc: "大規模言語モデルからマルチモーダルシステムまで、NLPの新たなトレンドを探り、今後の動向について予測します。",
-    //     blogPost3Title: "転移学習の実践ガイド",
-    //     blogPost3Desc: "この包括的なガイドでは、深層学習モデルのためのさまざまな転移学習技術を、実例とコードスニペットを交えて解説します。",
-    //     contactTitle: "連絡先",
-    //     contactText: "お気軽にお問い合わせください。"
-    //   }
-    // };
-
     // Translation dictionary
     const translations = {
       en: {
@@ -758,18 +763,24 @@
         subtitle: "Model Training | Machine Learning | Writing",
         navAbout: "About",
         navExperience: "Experience",
-        navProjects: "Projects",
+        navAcademicRoles: "Academic Roles", // NEW
+        navProjects: "Showcase Projects",
         navPublications: "Publications",
         navContact: "Contact",
         navCV: "CV",
         aboutTitle: "About Me",
-        // --- Combined aboutText1, 2, 3 from original en section, plus the new aboutText4 ---
-        aboutText1: "I'm a AI researcher/engineer with roots in Electrical and Electronics Engineering.", // From HTML
-        aboutText2: "As a researcher, I worked on emotion classifiation and LLM alignment.", // From HTML
-        aboutText3: "As an engineer, I help business and people with generative AI (Text, Image and Audio).", // From HTML
-        aboutText4: "Outside my professional life, I find joy in nature and draw inspiration from both Eastern and Western philosophy..", // Added from HTML
-        // --- End About Texts ---
+        aboutText1: "I'm a AI researcher/engineer with roots in Electrical and Electronics Engineering.",
+        aboutText2: "As a researcher, I worked on emotion classifiation and LLM alignment.",
+        aboutText3: "As an engineer, I help business and people with generative AI (Text, Image and Audio).",
+        aboutText4: "Outside my professional life, I find joy in nature and draw inspiration from both Eastern and Western philosophy.",
         experienceTitle: "Experience",
+        academicRolesTitle: "Academic Roles", 
+        raDesc1: "Trained a GPT-2 small-based language model on a specific dataset for accurate computation of conditional, joint, and marginal sentence probabilities while integrating a Mutual Information metric to quantify contextual interdependencies.", 
+        raDesc2: "Worked on the following project: Historical Anatomy of Public Opinion Making in Australia: Public Meeting Data Analysis via Natural Language Processing.", 
+        raDesc3: "Developed and trained Transformer models for text prediction, integrating attention visualization tools to analyze dynamic changes in attention patterns during training", 
+        taDesc1: "Facilitated sessions and graded programming assignments", 
+        taDesc2: "Facilitated sessions and graded programming assignments", 
+        taDesc3: "Assisted students with coding in R and Python.", 
         projectsTitle: "Projects",
         project1Title: "ML Model Deployment Platform",
         project1Desc: "An end-to-end platform for deploying and monitoring machine learning models in production.",
@@ -793,18 +804,24 @@
         subtitle: "モデル訓練 | 機械学習 | 執筆",
         navAbout: "私について",
         navExperience: "経験",
+        navAcademicRoles: "学術的役割", 
         navProjects: "プロジェクト",
         navPublications: "出版物",
         navContact: "連絡先",
         navCV: "履歴書",
         aboutTitle: "私について",
-        // --- Original ja about texts, plus the new aboutText4 translation ---
-        aboutText1: "電気・電子工学をバックグラウンドに持つ、AI研究者/エンジニアです。", // Translation of en:aboutText1
-        aboutText2: "研究者として、感情分類とLLMアライメントに取り組んでいました。", // Translation of en:aboutText2
-        aboutText3: "エンジニアとして、生成AI（テキスト、画像、音声）を用いてビジネスや人々を支援しています。", // Translation of en:aboutText3
-        aboutText4: "仕事以外では、自然の中に喜びを見いだし、東洋と西洋の哲学からインスピレーションを得ています。", // Translation of en:aboutText4
-        // --- End About Texts ---
+        aboutText1: "電気・電子工学をバックグラウンドに持つ、AI研究者/エンジニアです。",
+        aboutText2: "研究者として、感情分類とLLMアライメントに取り組んでいました。",
+        aboutText3: "エンジニアとして、生成AI（テキスト、画像、音声）を用いてビジネスや人々を支援しています。",
+        aboutText4: "仕事以外では、自然の中に喜びを見いだし、東洋と西洋の哲学からインスピレーションを得ています。",
         experienceTitle: "経験",
+        academicRolesTitle: "学術的役割", 
+        raDesc1: "［簡単な分野1］における研究活動を支援しました。", // NEW - Placeholder
+        raDesc2: "［簡単な分野2］のためのデータ収集と前処理を支援しました。", // NEW - Placeholder
+        raDesc3: "［簡単な分野3］における文献レビューと実験設定に貢献しました。", // NEW - Placeholder
+        taDesc1: "［簡単な科目1］のラボセッションの運営と課題の採点を担当しました。", // NEW - Placeholder
+        taDesc2: "［簡単な科目2］のオフィスアワーを担当し、学生サポートを提供しました。", // NEW - Placeholder
+        taDesc3: "［簡単な科目3］の教材準備を支援しました。", // NEW - Placeholder
         projectsTitle: "プロジェクト",
         project1Title: "MLモデル展開プラットフォーム",
         project1Desc: "プロダクション環境での機械学習モデルの展開と監視のためのエンドツーエンドのプラットフォーム。",
@@ -825,35 +842,33 @@
       }
     };
 
-
-    // Add this function to change the CV link based on language
+    // Function to update CV link based on language
     function updateCVLink(lang) {
-    const cvLink = document.querySelector('[data-translate="navCV"]');
-    if (cvLink) {
+      const cvLink = document.querySelector('[data-translate="navCV"]');
+      if (cvLink) {
         if (lang === 'en') {
-        cvLink.href = "assets/prakhar-cv-en.pdf";
+          cvLink.href = "assets/prakhar-cv-en.pdf";
         } else if (lang === 'ja') {
-        cvLink.href = "assets/prakhar-cv-ja.pdf";
+          cvLink.href = "assets/prakhar-cv-ja.pdf";
         }
-    }
+      }
     }
 
-    // Modify your setLanguage function to call this
+    // Function to set the language
     function setLanguage(lang) {
-    document.querySelectorAll('[data-translate]').forEach(element => {
+      document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
-        element.innerText = translations[lang][key];
+          element.innerText = translations[lang][key];
         }
-    });
-    // Update the language attribute on the <html> tag
-    document.documentElement.lang = lang;
-    // Update CV link
-    updateCVLink(lang);
-    // Save language preference
-    localStorage.setItem('language', lang);
+      });
+      // Update the language attribute on the <html> tag
+      document.documentElement.lang = lang;
+      // Update CV link
+      updateCVLink(lang);
+      // Save language preference
+      localStorage.setItem('language', lang);
     }
-
 
     // Check for saved language preference on load
     document.addEventListener('DOMContentLoaded', () => {
@@ -864,14 +879,14 @@
     // Theme toggle functionality
     const themeToggle = document.getElementById('theme-toggle-checkbox');
     const htmlElement = document.documentElement;
-    
+
     // Check if user has previously chosen a theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       htmlElement.setAttribute('data-theme', 'dark');
       if (themeToggle) themeToggle.checked = true;
     }
-    
+
     // Listen for toggle changes
     if (themeToggle) {
       themeToggle.addEventListener('change', function() {
@@ -884,7 +899,7 @@
         }
       });
     }
-    
+
     // Check for user's preferred color scheme if no saved preference
     if (!savedTheme) {
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
