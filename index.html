@@ -519,7 +519,7 @@
     <div class="container">
       <img src="assets/images/image.jpeg" alt="Your Profile Picture" class="profile-pic">
       <h1 data-translate="headerTitle">Prakhar Saxena</h1>
-      <p class="subtitle" data-translate="subtitle">Model Training | Generative AI | Writing</p>
+      <p class="subtitle" data-translate="subtitle">Model Training | Generative AI | Startups</p>
     </div>
   </header>
 
@@ -531,7 +531,7 @@
         <li><a href="#experience" data-translate="navExperience">Experience</a></li>
         <!-- NEW Navigation Link -->
         <li><a href="#academic-roles" data-translate="navAcademicRoles">Academic Roles</a></li>
-        <li><a href="#projects" data-translate="navProjects">Projects</a></li>
+        <!-- <li><a href="#projects" data-translate="navProjects">Projects</a></li> -->
         <li><a href="#publications" data-translate="navPublications">Publications</a></li>
         <!-- <li><a href="#blog">Blog</a></li> -->
         <li><a href="#contact" data-translate="navContact">Contact</a></li>
@@ -561,10 +561,10 @@
       <h2 data-translate="experienceTitle">Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">2023 - Present</div>
-          <div class="timeline-title">Senior Machine Learning Engineer</div>
-          <div class="timeline-subtitle">Tech Company, City</div>
-          <p>Developing and deploying machine learning models at scale. Leading a team of engineers to build a robust ML platform. Working on optimization techniques for large-scale data processing.</p>
+          <div class="timeline-date">2023 - 2024</div>
+          <div class="timeline-title">Generative AI Expert</div>
+          <div class="timeline-subtitle">SpiralAI, Tokyo</div>
+          <p>Led the development and deployment of HighEQ (Conversationalist) LLM, overseeing continued pretraining, supervised fine-tuning (SFT), reinforcement learning (RL), and deployment on Inf2 infrastructure.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2022</div>
@@ -617,7 +617,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" style="display: none;">
     <div class="container">
       <h2 data-translate="projectsTitle">Projects</h2>
       <div class="projects-grid">
@@ -757,30 +757,32 @@
   <!-- JavaScript for Theme and Language Toggle -->
   <script>
     // Translation dictionary
-    const translations = {
+ // Translation dictionary
+ const translations = {
       en: {
         headerTitle: "Prakhar Saxena",
-        subtitle: "Model Training | Machine Learning | Writing",
+        subtitle: "Model Training | Generative AI | Startups", // Corrected to match HTML
         navAbout: "About",
         navExperience: "Experience",
-        navAcademicRoles: "Academic Roles", // NEW
-        navProjects: "Showcase Projects",
+        navAcademicRoles: "Academic Roles",
+        navProjects: "Showcase Projects", // Keeping this as is, although "Projects" is also common
         navPublications: "Publications",
         navContact: "Contact",
         navCV: "CV",
         aboutTitle: "About Me",
         aboutText1: "I'm a AI researcher/engineer with roots in Electrical and Electronics Engineering.",
-        aboutText2: "As a researcher, I worked on emotion classifiation and LLM alignment.",
+        aboutText2: "As a researcher, my work involves emotion classification and LLM alignment.", // Refined wording
         aboutText3: "As an engineer, I help business and people with generative AI (Text, Image and Audio).",
         aboutText4: "Outside my professional life, I find joy in nature and draw inspiration from both Eastern and Western philosophy.",
         experienceTitle: "Experience",
-        academicRolesTitle: "Academic Roles", 
-        raDesc1: "Trained a GPT-2 small-based language model on a specific dataset for accurate computation of conditional, joint, and marginal sentence probabilities while integrating a Mutual Information metric to quantify contextual interdependencies.", 
-        raDesc2: "Worked on the following project: Historical Anatomy of Public Opinion Making in Australia: Public Meeting Data Analysis via Natural Language Processing.", 
-        raDesc3: "Developed and trained Transformer models for text prediction, integrating attention visualization tools to analyze dynamic changes in attention patterns during training", 
-        taDesc1: "Facilitated sessions and graded programming assignments", 
-        taDesc2: "Facilitated sessions and graded programming assignments", 
-        taDesc3: "Assisted students with coding in R and Python.", 
+        academicRolesTitle: "Academic Roles",
+        // Descriptions for Academic Roles (from English HTML)
+        raDesc1: "Trained a GPT-2 small-based language model on a specific dataset for accurate computation of conditional, joint, and marginal sentence probabilities while integrating a Mutual Information metric to quantify contextual interdependencies.",
+        raDesc2: "Worked on the following project: Historical Anatomy of Public Opinion Making in Australia: Public Meeting Data Analysis via Natural Language Processing.",
+        raDesc3: "Developed and trained Transformer models for text prediction, integrating attention visualization tools to analyze dynamic changes in attention patterns during training.",
+        taDesc1: "Facilitated sessions and graded programming assignments (Practice of Basic Informatics-E2).", // Added context for clarity
+        taDesc2: "Facilitated sessions and graded programming assignments (Practice of Basic Informatics-E2).", // Added context for clarity
+        taDesc3: "Assisted students with coding in R and Python (Information Analysis and Management).", // Added context for clarity
         projectsTitle: "Projects",
         project1Title: "ML Model Deployment Platform",
         project1Desc: "An end-to-end platform for deploying and monitoring machine learning models in production.",
@@ -801,27 +803,28 @@
       },
       ja: {
         headerTitle: "プラカル・サクセナ",
-        subtitle: "モデル訓練 | 機械学習 | 執筆",
+        subtitle: "モデル訓練 | 生成AI | スタートアップ", // Corrected to match English update
         navAbout: "私について",
         navExperience: "経験",
-        navAcademicRoles: "学術的役割", 
+        navAcademicRoles: "Academic Roles",
         navProjects: "プロジェクト",
         navPublications: "出版物",
         navContact: "連絡先",
         navCV: "履歴書",
         aboutTitle: "私について",
         aboutText1: "電気・電子工学をバックグラウンドに持つ、AI研究者/エンジニアです。",
-        aboutText2: "研究者として、感情分類とLLMアライメントに取り組んでいました。",
+        aboutText2: "研究者として、感情分類とLLMアライメントに関する研究に取り組んでいます。", // Refined wording/tense
         aboutText3: "エンジニアとして、生成AI（テキスト、画像、音声）を用いてビジネスや人々を支援しています。",
         aboutText4: "仕事以外では、自然の中に喜びを見いだし、東洋と西洋の哲学からインスピレーションを得ています。",
         experienceTitle: "経験",
-        academicRolesTitle: "学術的役割", 
-        raDesc1: "［簡単な分野1］における研究活動を支援しました。", // NEW - Placeholder
-        raDesc2: "［簡単な分野2］のためのデータ収集と前処理を支援しました。", // NEW - Placeholder
-        raDesc3: "［簡単な分野3］における文献レビューと実験設定に貢献しました。", // NEW - Placeholder
-        taDesc1: "［簡単な科目1］のラボセッションの運営と課題の採点を担当しました。", // NEW - Placeholder
-        taDesc2: "［簡単な科目2］のオフィスアワーを担当し、学生サポートを提供しました。", // NEW - Placeholder
-        taDesc3: "［簡単な科目3］の教材準備を支援しました。", // NEW - Placeholder
+        academicRolesTitle: "学術的役割",
+        // Specific Japanese translations for Academic Roles
+        raDesc1: "特定のデータセットでGPT-2 smallベースの言語モデルを訓練し、相互情報量メトリックを統合して文脈的相互依存性を定量化しつつ、条件付き、同時、周辺文確率の正確な計算を行いました。",
+        raDesc2: "『オーストラリアにおける世論形成の歴史的解剖：自然言語処理による公開集会データ分析』プロジェクトに従事しました。",
+        raDesc3: "テキスト予測のためのTransformerモデルを開発・訓練し、訓練中のアテンションパターンの動的変化を分析するためのアテンション可視化ツールを統合しました。",
+        taDesc1: "（基礎情報学演習E2にて）セッションの進行補助とプログラミング課題の採点を担当しました。", // Added context
+        taDesc2: "（基礎情報学演習E2にて）セッションの進行補助とプログラミング課題の採点を担当しました。", // Added context
+        taDesc3: "（情報分析・管理演習にて）RとPythonを用いたコーディングについて学生を支援しました。", // Added context
         projectsTitle: "プロジェクト",
         project1Title: "MLモデル展開プラットフォーム",
         project1Desc: "プロダクション環境での機械学習モデルの展開と監視のためのエンドツーエンドのプラットフォーム。",
@@ -849,7 +852,7 @@
         if (lang === 'en') {
           cvLink.href = "assets/prakhar-cv-en.pdf";
         } else if (lang === 'ja') {
-          cvLink.href = "assets/prakhar-cv-ja.pdf";
+          cvLink.href = "assets/prakhar-cv-en.pdf";
         }
       }
     }
